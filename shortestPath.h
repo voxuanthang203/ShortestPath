@@ -6,12 +6,12 @@
 #include <string>
 using namespace std;
 
-struct output {
+struct cell {
     int length;
     int start_cell;
     string path;
 };
 
-vector<vector<output>> shortestPath(const int, const int, const Matrix*);
+vector<vector<cell>> shortestPath(const int, const int, const Matrix*);
 
 #endif
