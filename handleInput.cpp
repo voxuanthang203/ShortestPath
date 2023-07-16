@@ -3,7 +3,7 @@
 #include <fstream>
 
 struct Matrix* createMatrix(const string filename) {
-    ifstream file("input-small.txt");
+    ifstream file(filename);
     if (!file.is_open()) {
         cout << "Unable to open file" << endl;
         return NULL;
