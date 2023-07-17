@@ -16,11 +16,23 @@ int main() {
 
     //call the shortestPath function to compute the optimal path
     vector<vector<cell>> output = shortestPath(matrix);
+    
+    //create output file
+    ofstream outputFile("output.txt");
 
-    //print out the result
-    for (int i = 0; i < matrix->cols; i++) {
-        cout << output[matrix->rows - 1][i].length << " " << output[matrix->rows - 1][i].start_cell << output[matrix->rows - 1][i].path << endl;
+    //print to output file
+    if (outputFile.is_open()) {
+        for (int i = 0; i < matrix->cols; i++) {
+            outputFile << output[matrix->rows - 1][i].length << " " << output[matrix->rows - 1][i].start_cell << output[matrix->rows - 1][i].path << endl;
+        }
+
+        //Close output file
+        outputFile.close();
     }
+    else {
+        cout << "Unable to open the output file." << endl;
+    }
+
 
     return 0;
 }
