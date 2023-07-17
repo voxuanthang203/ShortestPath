@@ -5,10 +5,11 @@
 #include <vector>
 #include <string>
 #include <limits>
+#include <algorithm>
 using namespace std;
 
 struct cell {
-    int length;
+    double length;
     int start_cell;
     string path;
 };

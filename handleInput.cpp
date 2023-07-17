@@ -1,6 +1,4 @@
 #include "handleInput.h"
-#include <iostream>
-#include <fstream>
 
 struct Matrix* createMatrix(const string filename) {
     ifstream file(filename);

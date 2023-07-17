@@ -9,7 +9,7 @@ using namespace std;
 #include "handleInput.h"
 
 int main() {
-    string input = "my_input.txt";
+    string input = "input-small.txt";
 
     Matrix* matrix = createMatrix(input);
 
