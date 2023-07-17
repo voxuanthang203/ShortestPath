@@ -11,5 +11,7 @@ vector<vector<cell>> shortestPath(const Matrix *matrix) {
         output[0][i].path = "";
     }
 
+    //compute the optimal path for each cell in the output matrix
+
     return output;
 }

@@ -4,6 +4,7 @@
 #include "handleInput.h"
 #include <vector>
 #include <string>
+#include <limits>
 using namespace std;
 
 struct cell {
@@ -12,6 +13,6 @@ struct cell {
     string path;
 };
 
-vector<vector<cell>> shortestPath(const int, const int, const Matrix*);
+vector<vector<cell>> shortestPath(const Matrix*);
 
 #endif
