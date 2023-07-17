@@ -32,6 +32,8 @@ struct Matrix* createMatrix(const string filename) {
         }
     }
 
+    //close the file
     file.close();
+    
     return result;
 };
